@@ -10,8 +10,6 @@ public:
                         freq['l' - 'a']/2,
                         freq['o' - 'a']/2,
                         freq['n' - 'a'],
-                       // freq['s' - 'a']
-
 
         });
     }
