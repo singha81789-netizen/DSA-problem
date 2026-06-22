@@ -3,7 +3,6 @@ public:
  int count = 0;
         void expand(string &s, int left, int right){
             
-           // while(left < right){
                 while(left >= 0 && right < s.size() && s[left] == s[right]){
                 count++;
                 left--;
@@ -11,7 +10,6 @@ public:
             }
         }
     int countSubstrings(string s) {
-        //int n=s.size();
         
         for(int i=0 ; i<s.size(); i++){
                 expand(s,i,i);
