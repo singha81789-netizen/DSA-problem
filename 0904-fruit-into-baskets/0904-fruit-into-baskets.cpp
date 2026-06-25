@@ -10,7 +10,6 @@ public:
             while(count.size() > 2){
                   count[fruits[left]]--;
                 if(count[fruits[left]]==0)
-              
                 count.erase(fruits[left]);
                 left++;
             }
