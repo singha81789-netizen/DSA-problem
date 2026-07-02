@@ -23,3 +23,25 @@ public:
 
 
 
+
+
+
+// class Solution {
+// public:
+//     int maxProfit(vector<int>& Prices) {
+//         int minPrices = Prices[0];
+//         int maxProfit = 0;
+
+//         for(int i = 0; i < Prices.size(); i++){
+//             if(Prices[i] < minPrices){
+//                 minPrices = Prices[i];
+
+//             } else if (Prices[i]-minPrices > maxProfit){
+//                 maxProfit = Prices[i]-minPrices;
+//             }
+
+
+//         }
+//         return maxProfit;
+//     }
+// };
