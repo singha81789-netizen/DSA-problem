@@ -1,17 +1,18 @@
 class Solution {
 public:
-    int removeDuplicates(vector<int>& nums) {
+   int removeDuplicates(vector<int>& nums) {
 
-        int i = 0;
+    int i = 1;   // unique element ki next position
 
-        for(int j = 1; j < nums.size(); j++){
+    for(int j = 1; j < nums.size(); j++) {
 
-            if(nums[i] != nums[j]){
-                i++;
-                nums[i] = nums[j];
-            }
+        // naya element mila?
+        if(nums[j] != nums[i-1]) {
+            nums[i] = nums[j];   // unique jagah pe rakho
+            i++;                  // next unique position
         }
-
-        return i + 1;
     }
+
+    return i;   // total unique elements
+}
 };
