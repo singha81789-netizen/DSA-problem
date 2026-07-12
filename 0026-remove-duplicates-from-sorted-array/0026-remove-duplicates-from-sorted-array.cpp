@@ -1,8 +1,7 @@
 class Solution {
 public:
    int removeDuplicates(vector<int>& nums) {
-
-    int i = 1;   // unique element ki next position
+   int i = 1;   // unique element ki next position
 
     for(int j = 1; j < nums.size(); j++) {
 
@@ -13,6 +12,9 @@ public:
         }
     }
 
-    return i;   // total unique elements
+     return i;   // total unique elements
+
 }
 };
+
+    
