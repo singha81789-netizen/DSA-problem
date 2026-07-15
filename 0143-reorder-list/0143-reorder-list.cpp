@@ -30,7 +30,8 @@ public:
             prev = curr;
             curr = next;
         }
-    ListNode* first = head;
+
+        ListNode* first = head;
         ListNode* second = prev;
 
         while(second){
