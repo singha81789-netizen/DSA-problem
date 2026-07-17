@@ -1,7 +1,10 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        vector<vector<int>> result;
+  
+
+
+ vector<vector<int>> result;
         sort(nums.begin(), nums.end());
         int n = nums.size();
 
@@ -36,3 +39,4 @@ public:
         return result;
     }
 };
+ 
