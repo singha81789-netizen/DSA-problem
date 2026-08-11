@@ -8,7 +8,7 @@ public:
                 break;
             }
         }
-       if(j == -1)return ;
+       if(j == -1) return;
 
 
         for(int i = j+1;i<nums.size();i++){
