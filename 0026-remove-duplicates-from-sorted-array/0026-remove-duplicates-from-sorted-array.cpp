@@ -1,36 +1,21 @@
 class Solution {
 public:
-    int removeDuplicates(vector<int>& nums) {
-        int i=0;
-        for(int j=1;j<nums.size();j++){
-            if(nums[j]!=nums[i]){
-                nums[i+1]=nums[j];
-                i++;
-            }
+   int removeDuplicates(vector<int>& nums) {
+
+   int i = 1;   // unique element ki next position
+
+    for(int j = 1; j < nums.size(); j++) {
+
+        // naya element mila?
+        if(nums[j] != nums[i-1]) {
+            nums[i] = nums[j];   // unique jagah pe rakho
+            i++;                  // next unique position
         }
-        return i+1;
     }
+
+     return i;   // total unique elements
+
+}
 };
-
-
-// class Solution {
-// public:
-//    int removeDuplicates(vector<int>& nums) {
-
-//    int i = 1;   // unique element ki next position
-
-//     for(int j = 1; j < nums.size(); j++) {
-
-//         // naya element mila?
-//         if(nums[j] != nums[i-1]) {
-//             nums[i] = nums[j];   // unique jagah pe rakho
-//             i++;                  // next unique position
-//         }
-//     }
-
-//      return i;   // total unique elements
-
-// }
-// };
 
     
